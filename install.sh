@@ -1,3 +1,4 @@
+#!/bin/bash
 apt update
 apt install -y python3
 apt install -y python-pip

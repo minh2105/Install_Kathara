@@ -23,7 +23,7 @@ chmod 755 KatharaMMT/bin/*
 cat >> ~/.bashrc <<EOF
 export NETKIT_HOME=~/KatharaMMT/bin
 export PATH=\$PATH:\$NETKIT_HOME
-export MANPATH=\$MANPATH:\$NETKIT_HOME/man
+export MANPATH=:\$NETKIT_HOME/man
 EOF
 source ~/.bashrc
 

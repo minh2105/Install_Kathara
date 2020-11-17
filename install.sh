@@ -3,7 +3,6 @@ apt install python3
 pip install ipaddress
 apt install build-essential
 apt install xterm
-cd
 
 echo "Installing Docker Container"
 sudo apt install -y curl gnupg2 software-properties-common apt-transport-https ca-certificates
@@ -12,12 +11,14 @@ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubun
 sudo apt update
 sudo apt install -y containerd.io docker-ce docker-ce-cli
 systemctl enable docker
-#Download source code Kathara
-git clone https://github.com/minh2105/KatharaMMT.git
 
+#Download source code Kathara
+cd 
+git clone https://github.com/minh2105/KatharaMMT.git
+chmod 755 KatharaMMT/bin
 echo "Setting veriables environment"
 cat >> ~/.bashrc <<EOF
-export NETKIT_HOME=~/Install_Kathara/bin
+export NETKIT_HOME=~/KatharaMMT/bin
 export PATH=$PATH:$NETKIT_HOME
 export MANPATH=:$NETKIT_HOME/man
 EOF

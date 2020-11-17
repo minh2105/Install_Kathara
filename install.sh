@@ -22,8 +22,8 @@ chmod 755 KatharaMMT/bin/*
 #Setting variables environment
 cat >> ~/.bashrc <<EOF
 export NETKIT_HOME=~/KatharaMMT/bin
-export PATH=$PATH:$NETKIT_HOME
-export MANPATH=:$NETKIT_HOME/man
+export PATH=\$PATH:\$NETKIT_HOME
+export MANPATH=\$MANPATH:\$NETKIT_HOME/man
 EOF
 source ~/.bashrc
 

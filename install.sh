@@ -1,8 +1,9 @@
 apt update
-apt install python3
-pip install ipaddress
-apt install build-essential
-apt install xterm
+apt install -y python3
+apt install -y python-pip
+pip install -y ipaddress
+apt install -y build-essential
+apt install -y xterm
 
 #Installing Docker Container
 sudo apt install -y curl gnupg2 software-properties-common apt-transport-https ca-certificates
@@ -16,6 +17,7 @@ systemctl enable docker
 cd 
 git clone https://github.com/minh2105/KatharaMMT.git
 chmod 755 KatharaMMT/bin
+chmod 755 KatharaMMT/bin/*
 
 #Setting variables environment
 cat >> ~/.bashrc <<EOF
@@ -36,3 +38,4 @@ systemctl restart docker
 
 #Start Kathara
 $NETKIT_HOME/install
+mkdir -p /root/netkit_temp/labs

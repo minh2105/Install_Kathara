@@ -10,7 +10,7 @@ sudo apt install -y curl gnupg2 software-properties-common apt-transport-https c
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
 sudo apt update
-sudo apt install -y docker.io docker-ce docker-ce-cli
+sudo apt install -y containerd.io docker-ce docker-ce-cli
 systemctl enable docker
 #Download source code Kathara
 git clone https://github.com/minh2105/KatharaMMT.git

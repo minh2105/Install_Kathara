@@ -13,7 +13,7 @@ sudo apt update
 sudo apt install -y docker.io docker-ce docker-ce-cli
 systemctl enable docker
 #Download source code Kathara
-git clone https://github.com/minh2105/Install_Kathara.git
+git clone https://github.com/minh2105/KatharaMMT.git
 
 echo "Setting veriables environment"
 cat >> ~/.bashrc <<EOF

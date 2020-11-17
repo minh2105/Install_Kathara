@@ -17,7 +17,7 @@ cd
 git clone https://github.com/minh2105/KatharaMMT.git
 chmod 755 KatharaMMT/bin
 
-echo "Setting veriables environment"
+#Setting variables environment
 cat >> ~/.bashrc <<EOF
 export NETKIT_HOME=~/KatharaMMT/bin
 export PATH=$PATH:$NETKIT_HOME

@@ -1,7 +1,7 @@
 apt update
 apt install -y python3
 apt install -y python-pip
-pip install -y ipaddress
+pip install ipaddress
 apt install -y build-essential
 apt install -y xterm
 

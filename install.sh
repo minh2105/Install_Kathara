@@ -31,5 +31,5 @@ EOF
 systemctl daemon-reload 
 systemctl restart docker
 
-#Installing Kathara
+echo "Installing Kathara"
 $NETKIT_HOME/install

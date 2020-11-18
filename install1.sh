@@ -28,12 +28,6 @@ export MANPATH=:\$NETKIT_HOME/man
 EOF
 source ~/.bashrc
 
-#Configure proxies for docker
-mkdir -p /etc/systemd/system/docker.service.d
-cat >> /etc/systemd/system/docker.service.d/http-proxy.conf <<EOF
-[Service]
-Environment=
-EOF
 systemctl daemon-reload 
 systemctl restart docker
 
